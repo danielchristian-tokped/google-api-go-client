@@ -8,8 +8,8 @@ import (
 	"context"
 	"log"
 
+	compute "github.com/danielchristian-tokped/google-api-go-client/compute/v1"
 	"golang.org/x/oauth2/google"
-	compute "google.golang.org/api/compute/v1"
 )
 
 const (

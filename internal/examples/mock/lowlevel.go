@@ -7,8 +7,8 @@ package mock
 import (
 	"fmt"
 
-	"google.golang.org/api/googleapi"
-	"google.golang.org/api/translate/v3"
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi"
+	"github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 // TranslateTextCall is used to translate text and is fullfilled by a

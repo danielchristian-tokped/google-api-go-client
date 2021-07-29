@@ -4,7 +4,7 @@
 
 // Package grpc supports network connections to GRPC servers.
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/danielchristian-tokped/google-api-go-client/option package to configure API clients.
 package grpc
 
 import (
@@ -15,11 +15,11 @@ import (
 	"strings"
 
 	"cloud.google.com/go/compute/metadata"
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/transport/internal/dca"
 	"go.opencensus.io/plugin/ocgrpc"
 	"golang.org/x/oauth2"
-	"google.golang.org/api/internal"
-	"google.golang.org/api/option"
-	"google.golang.org/api/transport/internal/dca"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	grpcgoogle "google.golang.org/grpc/credentials/google"

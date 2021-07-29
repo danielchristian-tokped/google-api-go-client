@@ -8,11 +8,11 @@ import (
 	"context"
 	"log"
 
-	admin "google.golang.org/api/admin/directory/v1"
-	"google.golang.org/api/impersonate"
-	"google.golang.org/api/option"
-	"google.golang.org/api/secretmanager/v1"
-	"google.golang.org/api/transport"
+	admin "github.com/danielchristian-tokped/google-api-go-client/admin/directory/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/impersonate"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/secretmanager/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/transport"
 )
 
 func ExampleCredentialsTokenSource_serviceAccount() {

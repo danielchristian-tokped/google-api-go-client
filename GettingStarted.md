@@ -18,10 +18,10 @@ You can find the complete list by looking at the
 [directories here](https://github.com/google/google-api-go-client/tree/master/).
 
 For example, let's install the
-[urlshortener's version 1 API](https://godoc.org/google.golang.org/api/urlshortener/v1):
+[urlshortener's version 1 API](https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/urlshortener/v1):
 
 ```
-$ go get -u google.golang.org/api/urlshortener/v1
+$ go get -u github.com/danielchristian-tokped/google-api-go-client/urlshortener/v1
 ```
 
 Now it's ready for use in your code.
@@ -37,7 +37,7 @@ import (
     "context"
     "golang.org/x/oauth2"
     "golang.org/x/oauth2/google"
-    "google.golang.org/api/urlshortener/v1"
+    "github.com/danielchristian-tokped/google-api-go-client/urlshortener/v1"
 )
 ```
 
@@ -94,7 +94,7 @@ In particular, see [google.DefaultClient](https://godoc.org/golang.org/x/oauth2/
 
 Some APIs require passing API keys from your application.
 To do this, you can use
-[transport.APIKey](https://godoc.org/google.golang.org/api/googleapi/transport#APIKey):
+[transport.APIKey](https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/googleapi/transport#APIKey):
 
 ```go
     ctx := context.WithValue(context.Background(), oauth2.HTTPClient, &http.Client{
@@ -132,7 +132,7 @@ in the [examples directory](https://github.com/google/google-api-go-client/tree/
 ## Error Handling
 
 Most errors returned by the `Do` methods of these clients will be of type
-[`googleapi.Error`](https://godoc.org/google.golang.org/api/googleapi#Error).
+[`googleapi.Error`](https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/googleapi#Error).
 Use a type assertion to obtain the HTTP status code and other properties of the
 error:
 

@@ -15,7 +15,7 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/api/googleapi"
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi"
 )
 
 func TestContentSniffing(t *testing.T) {

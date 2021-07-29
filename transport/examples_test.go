@@ -8,8 +8,8 @@ import (
 	"context"
 	"log"
 
-	"google.golang.org/api/option"
-	"google.golang.org/api/transport"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/transport"
 )
 
 func Example_applicationDefaultCredentials() {

@@ -13,12 +13,12 @@ import (
 	"testing"
 	"time"
 
-	admin "google.golang.org/api/admin/directory/v1"
-	"google.golang.org/api/idtoken"
-	"google.golang.org/api/impersonate"
-	"google.golang.org/api/option"
+	admin "github.com/danielchristian-tokped/google-api-go-client/admin/directory/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/idtoken"
+	"github.com/danielchristian-tokped/google-api-go-client/impersonate"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 
-	"google.golang.org/api/storage/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/storage/v1"
 )
 
 var (

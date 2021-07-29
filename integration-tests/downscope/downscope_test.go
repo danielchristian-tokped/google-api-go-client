@@ -14,13 +14,13 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/api/option"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 
+	storage "github.com/danielchristian-tokped/google-api-go-client/storage/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/transport"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"golang.org/x/oauth2/google/downscope"
-	storage "google.golang.org/api/storage/v1"
-	"google.golang.org/api/transport"
 )
 
 const (

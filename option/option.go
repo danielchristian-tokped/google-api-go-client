@@ -9,9 +9,9 @@ import (
 	"crypto/tls"
 	"net/http"
 
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/internal/impersonate"
 	"golang.org/x/oauth2"
-	"google.golang.org/api/internal"
-	"google.golang.org/api/internal/impersonate"
 	"google.golang.org/grpc"
 )
 
@@ -160,7 +160,7 @@ func (w withGRPCConnectionPool) Apply(o *internal.DialSettings) {
 // as the basis for authentication.
 //
 // API Keys can only be used for JSON-over-HTTP APIs, including those under
-// the import path google.golang.org/api/....
+// the import path github.com/danielchristian-tokped/google-api-go-client/....
 func WithAPIKey(apiKey string) ClientOption {
 	return withAPIKey(apiKey)
 }
@@ -307,7 +307,7 @@ func (w withClientCertSource) Apply(o *internal.DialSettings) {
 // This is an EXPERIMENTAL API and may be changed or removed in the future.
 //
 // This option has been replaced by `impersonate` package:
-// `google.golang.org/api/impersonate`. Please use the `impersonate` package
+// `github.com/danielchristian-tokped/google-api-go-client/impersonate`. Please use the `impersonate` package
 // instead.
 func ImpersonateCredentials(target string, delegates ...string) ClientOption {
 	return impersonateServiceAccount{

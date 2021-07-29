@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package api is the root of the packages used to access Google Cloud
-// Services. See https://godoc.org/google.golang.org/api for a full list of
+// Services. See https://godoc.org/github.com/danielchristian-tokped/google-api-go-client for a full list of
 // sub-packages.
 //
 // Within api there exist numerous clients which connect to Google APIs,
@@ -13,7 +13,7 @@
 // Client Options
 //
 // All clients in sub-packages are configurable via client options. These
-// options are described here: https://godoc.org/google.golang.org/api/option.
+// options are described here: https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/option.
 //
 //
 // Authentication and Authorization
@@ -22,7 +22,7 @@
 // Application Default Credentials (see
 // https://cloud.google.com/docs/authentication/production), or by providing a
 // JSON key file for a Service Account. See the authentication examples in
-// https://godoc.org/google.golang.org/api/transport for more details.
+// https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/transport for more details.
 //
 //
 // Versioning and Stability
@@ -33,7 +33,7 @@
 //
 // Google APIs follow semver as specified by
 // https://cloud.google.com/apis/design/versioning. The code generator and
-// the code it produces - the libraries in the google.golang.org/api/...
+// the code it produces - the libraries in the github.com/danielchristian-tokped/google-api-go-client/...
 // subpackages - are beta.
 //
 // Note that versioning and stability is strictly not communicated through Go

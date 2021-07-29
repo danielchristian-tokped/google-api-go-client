@@ -11,10 +11,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/danielchristian-tokped/google-api-go-client/idtoken"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/api/idtoken"
-	"google.golang.org/api/option"
 )
 
 const (

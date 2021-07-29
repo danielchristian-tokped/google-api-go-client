@@ -30,7 +30,7 @@ go version
 
 # Set $GOPATH
 export GOPATH="$HOME/go"
-export GOCLOUD_HOME=$GOPATH/src/google.golang.org/api/
+export GOCLOUD_HOME=$GOPATH/src/github.com/danielchristian-tokped/google-api-go-client/
 export PATH="$GOPATH/bin:$PATH"
 export GO111MODULE=on
 mkdir -p $GOCLOUD_HOME

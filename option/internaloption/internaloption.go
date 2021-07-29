@@ -6,8 +6,8 @@
 package internaloption
 
 import (
-	"google.golang.org/api/internal"
-	"google.golang.org/api/option"
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 )
 
 type defaultEndpointOption string

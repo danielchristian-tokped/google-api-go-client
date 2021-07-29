@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/api/option"
-	"google.golang.org/api/storage/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/storage/v1"
 )
 
 var (

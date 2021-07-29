@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strings"
 
-	gmail "google.golang.org/api/gmail/v1"
+	gmail "github.com/danielchristian-tokped/google-api-go-client/gmail/v1"
 )
 
 func init() {

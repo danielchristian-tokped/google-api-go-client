@@ -19,8 +19,8 @@ import (
 	"testing/iotest"
 
 	// If you add a client, add a matching go:generate line below.
-	mon "google.golang.org/api/monitoring/v3"
-	storage "google.golang.org/api/storage/v1"
+	mon "github.com/danielchristian-tokped/google-api-go-client/monitoring/v3"
+	storage "github.com/danielchristian-tokped/google-api-go-client/storage/v1"
 )
 
 //go:generate -command api go run gen.go docurls.go replacements.go -install -api

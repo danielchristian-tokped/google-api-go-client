@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/option/internaloption"
 	"golang.org/x/oauth2"
 	"golang.org/x/sys/unix"
-	"google.golang.org/api/option"
-	"google.golang.org/api/option/internaloption"
 	"google.golang.org/grpc"
 )
 

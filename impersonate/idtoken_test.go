@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"testing"
 
-	"google.golang.org/api/option"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 )
 
 func TestIDTokenSource(t *testing.T) {

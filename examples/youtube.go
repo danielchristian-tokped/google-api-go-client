@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"os"
 
-	youtube "google.golang.org/api/youtube/v3"
+	youtube "github.com/danielchristian-tokped/google-api-go-client/youtube/v3"
 )
 
 func init() {

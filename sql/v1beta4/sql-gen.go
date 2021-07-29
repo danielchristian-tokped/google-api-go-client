@@ -12,7 +12,7 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/sql/v1beta4"
+//   import "github.com/danielchristian-tokped/google-api-go-client/sql/v1beta4"
 //   ...
 //   ctx := context.Background()
 //   sqlService, err := sql.NewService(ctx)
@@ -38,12 +38,12 @@
 //   token, err := config.Exchange(ctx, ...)
 //   sqlService, err := sql.NewService(ctx, option.WithTokenSource(config.TokenSource(ctx, token)))
 //
-// See https://godoc.org/google.golang.org/api/option/ for details on options.
+// See https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/option/ for details on options.
 //
-// Deprecated: please use "google.golang.org/api/sqladmin/v1beta4" instead. This
+// Deprecated: please use "github.com/danielchristian-tokped/google-api-go-client/sqladmin/v1beta4" instead. This
 // client was accidentally generated under the wrong package. The correct package
 // is "sqladmin". This client will be removed in a future release.
-package sql // import "google.golang.org/api/sql/v1beta4"
+package sql // import "github.com/danielchristian-tokped/google-api-go-client/sql/v1beta4"
 
 import (
 	"bytes"
@@ -57,11 +57,11 @@ import (
 	"strconv"
 	"strings"
 
-	googleapi "google.golang.org/api/googleapi"
-	gensupport "google.golang.org/api/internal/gensupport"
-	option "google.golang.org/api/option"
-	internaloption "google.golang.org/api/option/internaloption"
-	htransport "google.golang.org/api/transport/http"
+	googleapi "github.com/danielchristian-tokped/google-api-go-client/googleapi"
+	gensupport "github.com/danielchristian-tokped/google-api-go-client/internal/gensupport"
+	option "github.com/danielchristian-tokped/google-api-go-client/option"
+	internaloption "github.com/danielchristian-tokped/google-api-go-client/option/internaloption"
+	htransport "github.com/danielchristian-tokped/google-api-go-client/transport/http"
 )
 
 // Always reference these packages, just in case the auto-generated code
@@ -120,7 +120,7 @@ func NewService(ctx context.Context, opts ...option.ClientOption) (*Service, err
 //
 // Deprecated: please use NewService instead.
 // To provide a custom HTTP client, use option.WithHTTPClient.
-// If you are using google.golang.org/api/googleapis/transport.APIKey, use option.WithAPIKey with NewService instead.
+// If you are using github.com/danielchristian-tokped/google-api-go-client/googleapis/transport.APIKey, use option.WithAPIKey with NewService instead.
 func New(client *http.Client) (*Service, error) {
 	if client == nil {
 		return nil, errors.New("client is nil")

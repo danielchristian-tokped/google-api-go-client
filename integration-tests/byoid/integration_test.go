@@ -20,7 +20,7 @@
 //    • wget -c https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
 //       • Check https://golang.org/dl/for the latest version of Go
 //    • sudo tar -C /usr/local -xvzf go1.15.2.linux-amd64.tar.gz
-//    • go mod init google.golang.org/api/google-api-go-client
+//    • go mod init github.com/danielchristian-tokped/google-api-go-client/google-api-go-client
 //    • go mod tidy
 // • Run setup.sh
 // • go test -tags integration`
@@ -41,10 +41,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/danielchristian-tokped/google-api-go-client/dns/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/idtoken"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/api/dns/v1"
-	"google.golang.org/api/idtoken"
-	"google.golang.org/api/option"
 )
 
 const (

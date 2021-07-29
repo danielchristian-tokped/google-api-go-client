@@ -10,9 +10,9 @@ import (
 
 	"google.golang.org/grpc"
 
-	"google.golang.org/api/option"
-	gtransport "google.golang.org/api/transport/grpc"
-	htransport "google.golang.org/api/transport/http"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	gtransport "github.com/danielchristian-tokped/google-api-go-client/transport/grpc"
+	htransport "github.com/danielchristian-tokped/google-api-go-client/transport/http"
 )
 
 // NewHTTPClient returns an HTTP client for use communicating with a Google cloud

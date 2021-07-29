@@ -9,7 +9,7 @@ import (
 
 	"crypto/tls"
 
-	"google.golang.org/api/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
 )
 
 func TestGetEndpoint(t *testing.T) {

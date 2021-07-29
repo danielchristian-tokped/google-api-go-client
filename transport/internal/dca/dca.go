@@ -22,7 +22,7 @@
 // endpoint override is an mTLS url, since the url pattern may change at anytime.
 //
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/danielchristian-tokped/google-api-go-client/option package to configure API clients.
 package dca
 
 import (
@@ -30,8 +30,8 @@ import (
 	"os"
 	"strings"
 
-	"google.golang.org/api/internal"
-	"google.golang.org/api/transport/cert"
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/transport/cert"
 )
 
 const (

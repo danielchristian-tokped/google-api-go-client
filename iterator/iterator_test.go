@@ -11,8 +11,8 @@ import (
 	"reflect"
 	"testing"
 
-	"google.golang.org/api/iterator"
-	itest "google.golang.org/api/iterator/testing"
+	"github.com/danielchristian-tokped/google-api-go-client/iterator"
+	itest "github.com/danielchristian-tokped/google-api-go-client/iterator/testing"
 )
 
 // Service represents the implementation of a Google API's List method.
