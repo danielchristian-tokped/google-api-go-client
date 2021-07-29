@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"io"
 
-	"google.golang.org/api/googleapi"
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi"
 )
 
 // MediaBuffer buffers data from an io.Reader to support uploading media in

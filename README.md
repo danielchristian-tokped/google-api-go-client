@@ -3,9 +3,9 @@
 ## Getting Started
 
 ```shell
-$ go get google.golang.org/api/tasks/v1
-$ go get google.golang.org/api/moderator/v1
-$ go get google.golang.org/api/urlshortener/v1
+$ go get github.com/danielchristian-tokped/google-api-go-client/tasks/v1
+$ go get github.com/danielchristian-tokped/google-api-go-client/moderator/v1
+$ go get github.com/danielchristian-tokped/google-api-go-client/urlshortener/v1
 ... etc ...
 ```
 
@@ -18,7 +18,7 @@ import (
         "context"
         "net/http"
 
-        "google.golang.org/api/urlshortener/v1"
+        "github.com/danielchristian-tokped/google-api-go-client/urlshortener/v1"
 )
 
 func main() {
@@ -34,7 +34,7 @@ func main() {
 
 ## Status
 
-[![Go Reference](https://pkg.go.dev/badge/google.golang.org/api.svg)](https://pkg.go.dev/google.golang.org/api)
+[![Go Reference](https://pkg.go.dev/badge/github.com/danielchristian-tokped/google-api-go-client.svg)](https://pkg.go.dev/github.com/danielchristian-tokped/google-api-go-client)
 
 These are auto-generated Go libraries from the Google Discovery Service's JSON description files.
 
@@ -55,12 +55,12 @@ for authorization credentials used in calling the API endpoints. This will allow
 environments without requiring explicit configuration.
 
 ```go
-// import "google.golang.org/api/sheets/v4"
+// import "github.com/danielchristian-tokped/google-api-go-client/sheets/v4"
 client, err := sheets.NewService(ctx)
 ```
 
 To authorize using a [JSON key file](https://cloud.google.com/iam/docs/managing-service-account-keys), pass
-[`option.WithCredentialsFile`](https://pkg.go.dev/google.golang.org/api/option#WithCredentialsFile) to the `NewService`
+[`option.WithCredentialsFile`](https://pkg.go.dev/github.com/danielchristian-tokped/google-api-go-client/option#WithCredentialsFile) to the `NewService`
 function of the desired package. For example:
 
 ```go
@@ -68,7 +68,7 @@ client, err := sheets.NewService(ctx, option.WithCredentialsFile("path/to/keyfil
 ```
 
 You can exert more control over authorization by using the [`golang.org/x/oauth2`](https://pkg.go.dev/golang.org/x/oauth2)
-package to create an `oauth2.TokenSource`. Then pass [`option.WithTokenSource`](https://pkg.go.dev/google.golang.org/api/option#WithTokenSource)
+package to create an `oauth2.TokenSource`. Then pass [`option.WithTokenSource`](https://pkg.go.dev/github.com/danielchristian-tokped/google-api-go-client/option#WithTokenSource)
 to the `NewService` function:
 
 ```go
@@ -79,4 +79,4 @@ svc, err := sheets.NewService(ctx, option.WithTokenSource(tokenSource))
 ## More information
 
 For some more information related to all of the generated clients please read through our
-[package documentation](https://pkg.go.dev/google.golang.org/api#section-documentation).
+[package documentation](https://pkg.go.dev/github.com/danielchristian-tokped/google-api-go-client#section-documentation).

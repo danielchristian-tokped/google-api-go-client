@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"google.golang.org/api/translate/v3"
+	"github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 // TranslateText translates text to the given language using the provided

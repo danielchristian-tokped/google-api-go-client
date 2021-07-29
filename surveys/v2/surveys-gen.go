@@ -10,7 +10,7 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/surveys/v2"
+//   import "github.com/danielchristian-tokped/google-api-go-client/surveys/v2"
 //   ...
 //   ctx := context.Background()
 //   surveysService, err := surveys.NewService(ctx)
@@ -36,8 +36,8 @@
 //   token, err := config.Exchange(ctx, ...)
 //   surveysService, err := surveys.NewService(ctx, option.WithTokenSource(config.TokenSource(ctx, token)))
 //
-// See https://godoc.org/google.golang.org/api/option/ for details on options.
-package surveys // import "google.golang.org/api/surveys/v2"
+// See https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/option/ for details on options.
+package surveys // import "github.com/danielchristian-tokped/google-api-go-client/surveys/v2"
 
 import (
 	"bytes"
@@ -51,10 +51,10 @@ import (
 	"strconv"
 	"strings"
 
-	googleapi "google.golang.org/api/googleapi"
-	gensupport "google.golang.org/api/internal/gensupport"
-	option "google.golang.org/api/option"
-	htransport "google.golang.org/api/transport/http"
+	googleapi "github.com/danielchristian-tokped/google-api-go-client/googleapi"
+	gensupport "github.com/danielchristian-tokped/google-api-go-client/internal/gensupport"
+	option "github.com/danielchristian-tokped/google-api-go-client/option"
+	htransport "github.com/danielchristian-tokped/google-api-go-client/transport/http"
 )
 
 // Always reference these packages, just in case the auto-generated code
@@ -115,7 +115,7 @@ func NewService(ctx context.Context, opts ...option.ClientOption) (*Service, err
 //
 // Deprecated: please use NewService instead.
 // To provide a custom HTTP client, use option.WithHTTPClient.
-// If you are using google.golang.org/api/googleapis/transport.APIKey, use option.WithAPIKey with NewService instead.
+// If you are using github.com/danielchristian-tokped/google-api-go-client/googleapis/transport.APIKey, use option.WithAPIKey with NewService instead.
 func New(client *http.Client) (*Service, error) {
 	if client == nil {
 		return nil, errors.New("client is nil")

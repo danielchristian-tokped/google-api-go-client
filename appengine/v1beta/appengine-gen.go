@@ -12,7 +12,7 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/appengine/v1beta"
+//   import "github.com/danielchristian-tokped/google-api-go-client/appengine/v1beta"
 //   ...
 //   ctx := context.Background()
 //   appengineService, err := appengine.NewService(ctx)
@@ -38,8 +38,8 @@
 //   token, err := config.Exchange(ctx, ...)
 //   appengineService, err := appengine.NewService(ctx, option.WithTokenSource(config.TokenSource(ctx, token)))
 //
-// See https://godoc.org/google.golang.org/api/option/ for details on options.
-package appengine // import "google.golang.org/api/appengine/v1beta"
+// See https://godoc.org/github.com/danielchristian-tokped/google-api-go-client/option/ for details on options.
+package appengine // import "github.com/danielchristian-tokped/google-api-go-client/appengine/v1beta"
 
 import (
 	"bytes"
@@ -53,11 +53,11 @@ import (
 	"strconv"
 	"strings"
 
-	googleapi "google.golang.org/api/googleapi"
-	gensupport "google.golang.org/api/internal/gensupport"
-	option "google.golang.org/api/option"
-	internaloption "google.golang.org/api/option/internaloption"
-	htransport "google.golang.org/api/transport/http"
+	googleapi "github.com/danielchristian-tokped/google-api-go-client/googleapi"
+	gensupport "github.com/danielchristian-tokped/google-api-go-client/internal/gensupport"
+	option "github.com/danielchristian-tokped/google-api-go-client/option"
+	internaloption "github.com/danielchristian-tokped/google-api-go-client/option/internaloption"
+	htransport "github.com/danielchristian-tokped/google-api-go-client/transport/http"
 )
 
 // Always reference these packages, just in case the auto-generated code
@@ -122,7 +122,7 @@ func NewService(ctx context.Context, opts ...option.ClientOption) (*APIService, 
 //
 // Deprecated: please use NewService instead.
 // To provide a custom HTTP client, use option.WithHTTPClient.
-// If you are using google.golang.org/api/googleapis/transport.APIKey, use option.WithAPIKey with NewService instead.
+// If you are using github.com/danielchristian-tokped/google-api-go-client/googleapis/transport.APIKey, use option.WithAPIKey with NewService instead.
 func New(client *http.Client) (*APIService, error) {
 	if client == nil {
 		return nil, errors.New("client is nil")

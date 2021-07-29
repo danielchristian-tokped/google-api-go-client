@@ -1,6 +1,6 @@
-# Testing Code that depends on google.golang.org/api
+# Testing Code that depends on github.com/danielchristian-tokped/google-api-go-client
 
-The client libraries generated as a part of `google.golang.org/api` all take
+The client libraries generated as a part of `github.com/danielchristian-tokped/google-api-go-client` all take
 the approach of returning concrete types instead of interfaces. That way, new
 fields and methods can be added to the libraries without breaking users. This
 document will go over some patterns that can be used to test code that depends
@@ -11,7 +11,7 @@ on the these libraries.
 *Note*: You can see the full
 [example code using a fake here](https://github.com/googleapis/google-api-go-client/tree/master/internal/examples/fake).
 
-The services found in `google.golang.org/api` are all HTTP based.
+The services found in `github.com/danielchristian-tokped/google-api-go-client` are all HTTP based.
 Interactions with HTTP services can be faked by serving up your own in-memory
 server within your test. One benefit of using this approach is that you don’t
 need to define an interface in your runtime code; you can keep using the
@@ -23,7 +23,7 @@ import (
     "fmt"
     "os"
 
-    "google.golang.org/api/translate/v3"
+    "github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 // TranslateText translates text to the given language using the provided
@@ -57,8 +57,8 @@ import (
     "net/http/httptest"
     "testing"
 
-    "google.golang.org/api/option"
-    "google.golang.org/api/translate/v3"
+    "github.com/danielchristian-tokped/google-api-go-client/option"
+    "github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 func TestTranslateText(t *testing.T) {
@@ -97,7 +97,7 @@ func TestTranslateText(t *testing.T) {
 [example code using a mocks here](https://github.com/googleapis/google-api-go-client/tree/master/internal/examples/mock).
 
 When mocking code you need to work with interfaces. Because the services in
-`google.golang.org/api` use the builder pattern to construct and execute
+`github.com/danielchristian-tokped/google-api-go-client` use the builder pattern to construct and execute
 requests it can be tedious to create low-level interfaces that match methods
 found on the services directly. Although this can be done and you can find
 examples of this in full code linked above. Another approach that will keep your
@@ -133,8 +133,8 @@ import (
     "log"
     "os"
 
-    "google.golang.org/api/option"
-    "google.golang.org/api/translate/v3"
+    "github.com/danielchristian-tokped/google-api-go-client/option"
+    "github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 type translateService struct {

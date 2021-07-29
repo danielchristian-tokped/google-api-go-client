@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/danielchristian-tokped/google-api-go-client/option"
 	"golang.org/x/oauth2"
-	"google.golang.org/api/option"
 	"google.golang.org/grpc"
 )
 

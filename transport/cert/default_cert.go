@@ -9,7 +9,7 @@
 // See https://cloud.google.com/endpoint-verification/docs/overview
 //
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/danielchristian-tokped/google-api-go-client/option package to configure API clients.
 package cert
 
 import (

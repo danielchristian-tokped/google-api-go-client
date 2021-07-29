@@ -9,8 +9,8 @@ import (
 	"log"
 	"net/http"
 
-	"google.golang.org/api/customsearch/v1"
-	"google.golang.org/api/googleapi/transport"
+	"github.com/danielchristian-tokped/google-api-go-client/customsearch/v1"
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi/transport"
 )
 
 const (

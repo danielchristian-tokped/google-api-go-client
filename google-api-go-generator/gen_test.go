@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"google.golang.org/api/google-api-go-generator/internal/disco"
-	"google.golang.org/api/internal/version"
+	"github.com/danielchristian-tokped/google-api-go-client/google-api-go-generator/internal/disco"
+	"github.com/danielchristian-tokped/google-api-go-client/internal/version"
 )
 
 var updateGolden = flag.Bool("update_golden", false, "If true, causes TestAPIs to update golden files")

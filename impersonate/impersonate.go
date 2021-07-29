@@ -14,10 +14,10 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/option/internaloption"
+	htransport "github.com/danielchristian-tokped/google-api-go-client/transport/http"
 	"golang.org/x/oauth2"
-	"google.golang.org/api/option"
-	"google.golang.org/api/option/internaloption"
-	htransport "google.golang.org/api/transport/http"
 )
 
 var (

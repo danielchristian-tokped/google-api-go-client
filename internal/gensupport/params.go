@@ -7,7 +7,7 @@ package gensupport
 import (
 	"net/url"
 
-	"google.golang.org/api/googleapi"
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi"
 )
 
 // URLParams is a simplified replacement for url.Values

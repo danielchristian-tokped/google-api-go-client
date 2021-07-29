@@ -12,8 +12,8 @@ import (
 	"log"
 	"os"
 
-	"google.golang.org/api/option"
-	"google.golang.org/api/translate/v3"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 // TranslateService is a facade of a `translate.Service`, specifically used to

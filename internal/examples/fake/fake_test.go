@@ -11,8 +11,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"google.golang.org/api/option"
-	"google.golang.org/api/translate/v3"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 func TestTranslateText(t *testing.T) {

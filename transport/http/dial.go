@@ -4,7 +4,7 @@
 
 // Package http supports network connections to HTTP servers.
 // This package is not intended for use by end developers. Use the
-// google.golang.org/api/option package to configure API clients.
+// github.com/danielchristian-tokped/google-api-go-client/option package to configure API clients.
 package http
 
 import (
@@ -15,14 +15,14 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi/transport"
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/option"
+	"github.com/danielchristian-tokped/google-api-go-client/transport/cert"
+	"github.com/danielchristian-tokped/google-api-go-client/transport/http/internal/propagation"
+	"github.com/danielchristian-tokped/google-api-go-client/transport/internal/dca"
 	"go.opencensus.io/plugin/ochttp"
 	"golang.org/x/oauth2"
-	"google.golang.org/api/googleapi/transport"
-	"google.golang.org/api/internal"
-	"google.golang.org/api/option"
-	"google.golang.org/api/transport/cert"
-	"google.golang.org/api/transport/http/internal/propagation"
-	"google.golang.org/api/transport/internal/dca"
 )
 
 // NewClient returns an HTTP client for use communicating with a Google cloud

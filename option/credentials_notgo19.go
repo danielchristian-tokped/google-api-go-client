@@ -7,8 +7,8 @@
 package option
 
 import (
+	"github.com/danielchristian-tokped/google-api-go-client/internal"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/api/internal"
 )
 
 type withCreds google.DefaultCredentials

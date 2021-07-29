@@ -70,6 +70,6 @@ func ExampleNewServer() {
 	}
 
 	// Start accepting incoming connections.
-	// See gRPC docs and newGRPCServer in google.golang.org/api/transport/bytestream/client_test.go.
+	// See gRPC docs and newGRPCServer in github.com/danielchristian-tokped/google-api-go-client/transport/bytestream/client_test.go.
 	_ = bytestreamServer
 }

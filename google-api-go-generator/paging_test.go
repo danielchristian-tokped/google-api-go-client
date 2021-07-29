@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"testing"
 
-	crm "google.golang.org/api/cloudresourcemanager/v1"
+	crm "github.com/danielchristian-tokped/google-api-go-client/cloudresourcemanager/v1"
 )
 
 //go:generate -command api go run gen.go docurls.go replacements.go -install -api

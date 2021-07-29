@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	books "google.golang.org/api/books/v1"
+	books "github.com/danielchristian-tokped/google-api-go-client/books/v1"
 )
 
 func init() {

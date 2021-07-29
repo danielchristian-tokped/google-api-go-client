@@ -7,8 +7,8 @@ package mock
 import (
 	"testing"
 
-	"google.golang.org/api/googleapi"
-	"google.golang.org/api/translate/v3"
+	"github.com/danielchristian-tokped/google-api-go-client/googleapi"
+	"github.com/danielchristian-tokped/google-api-go-client/translate/v3"
 )
 
 // mockCall fullfills the TranslateTextCall and matches the `Do` call on

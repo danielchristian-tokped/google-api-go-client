@@ -14,7 +14,7 @@ import (
 	"net"
 	"testing"
 
-	"google.golang.org/api/transport/bytestream/internal"
+	"github.com/danielchristian-tokped/google-api-go-client/transport/bytestream/internal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 

@@ -4,7 +4,7 @@
 
 // Package testing provides support functions for testing iterators conforming
 // to the standard pattern.
-// See package google.golang.org/api/iterator and
+// See package github.com/danielchristian-tokped/google-api-go-client/iterator and
 // https://github.com/GoogleCloudPlatform/gcloud-golang/wiki/Iterator-Guidelines.
 package testing
 
@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"google.golang.org/api/iterator"
+	"github.com/danielchristian-tokped/google-api-go-client/iterator"
 )
 
 // TestIterator tests the Next method of a standard iterator. It assumes that
